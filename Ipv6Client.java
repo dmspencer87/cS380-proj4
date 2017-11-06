@@ -25,7 +25,7 @@ public class Ipv6Client{
             for(int i = 1; i < 13; i++){
                 int data = (int)Math.pow(2.0, i);
                 packet = new byte[(short)(40 + data)];
-                packet[0] = 0b01100000;
+                packet[0] = 0x60;
                 packet[1] = 0;
                 packet[2] = 0;
                 packet[3] = 0;
